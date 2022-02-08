@@ -1,0 +1,434 @@
+*{
+    /* margin: 0px;
+    padding: 0px; */
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    color: #666;
+    background-color: #ebebeb;
+}
+
+/*----- HEADER -----*/
+
+header {
+    background-color: #EAC926;
+    padding: 15px;
+}
+.logoybarra{
+    display: flex;
+    align-items: center;
+}
+.logo {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.barra {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin-left: 15px;
+}
+
+header p {
+    text-align: center;
+    color: black;
+    margin: 25px;
+}
+header ul li a{
+    text-decoration: none;
+    color: black;
+}
+.site, .login-navbar {
+    list-style: none;
+    padding-left: 0;
+    display: none;
+}
+
+.burger-menu{
+    text-align: center;
+}
+.burger-menu i {
+    background-color: #1259c3;  
+    color: white;
+    padding: 10px;  
+    border-radius: 5px;
+}
+
+.banner img {
+    width: 100%;
+}
+/* 
+Amarillo: #EAC926;
+Azul: #03264C;
+Celeste: #1259c3;
+Gris oscuro: #666;
+Gris claro: #ebebeb;
+Verde: #39b54a; 
+
+Cuerpos de texto: 12px
+Titulares (Basado en tu última visita/Ofertas): 24px
+Precios: 18px
+Descuentos: 16px
+Descripciones: 16px
+
+*/
+
+/*----- MAIN -----*/
+
+main {
+    width: 90%;
+    margin: auto;
+}
+
+.texto-24px{
+    font-size: 24px;
+    margin: 20px 0px;
+}
+
+.productos article {
+    margin: 10px 0px;
+}
+
+.productos article img {
+    width: 100%
+}
+
+
+/* main section{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+main section article{
+    margin: 10px;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} */
+
+.box-descripcion {
+    width: 100%;
+    border-top: solid 1px #ebebeb;
+    padding: 15px;
+    background-color: white;
+    position: relative;
+}
+
+.fa-truck{
+    transition: all 1s;
+}
+
+main section article .box-descripcion i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    color: #39b54a;
+    border: 1px solid #39b54a;
+    color: 39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+.precioydescuento {
+    display: flex;
+    width: 80%;
+    max-width: 300px;
+}
+
+.precios {
+    font-size: 18px;
+    margin: 0;
+    width: 30%;
+}
+
+.descuentos {
+    font-size: 16px;
+    margin-top: 0;
+    color: #39b54a;
+    width: 70%;
+}
+
+.descripciones {
+    font-size: 16px;
+    display: none;
+}
+
+/*----- FOOTER -----*/
+
+footer{
+    text-align: center;
+    background-color: white;
+    padding: 15px;
+}
+
+footer h3{
+    margin: 0;
+}
+
+footer p{
+    margin: 5px 0;
+}
+
+footer .footer-arriba div{
+    margin: 5px 0px;
+}
+
+footer i {
+    color: #1259c3;
+    font-size: 2em;
+    margin: 10px 0px 5px 0px;
+}
+
+.copyright{
+    margin-top: 10px;
+}
+
+/*----- MEDIA -----*/
+
+@media (min-width:361px) {
+
+    .box-descripcion,.imagen-articulo {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    .productos {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .productos article {
+        width: 45%;
+    }
+
+    .precioydescuento {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+@media (min-width:481px) {
+
+    main .ultima-visita .productos article:hover .box-descripcion .descripciones, main .ofertas .productos article:hover .box-descripcion .descripciones{
+        display: block;
+    }
+
+    .fa-truck:hover {
+        transform: rotate(-90deg);
+    }
+
+    .site, .login-navbar {
+        display: block;
+    }
+    .burger-menu{
+        display: none;
+    }
+
+    .encabezado {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+   
+    .logoybarra{
+        width: 60%;
+        min-width: 350px;
+    }
+    .encabezado p{
+        margin-left: 15px;
+        text-align: end;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .site, .login-navbar {
+        display: flex;
+        justify-content: space-between;
+        width: 40%;
+        max-width: 320px;
+    }
+
+    nav ul li {
+        padding: 10px;
+    }
+}
+
+@media (min-width:769px) {
+
+    p{
+        font-size: 14px;
+    }
+
+    h3{
+        font-size: 18px;
+    }
+    
+    article:hover {
+        box-shadow: 0px 0px 20px rgb(100, 100, 100);
+    } 
+    
+    .box-descripcion,.imagen-articulo {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    .productos article {
+        width: 23%;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-arriba{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .footer-arriba div {
+     padding: 0px 10px;
+     max-width: 500px;
+    }
+
+
+    footer i:hover{
+        color:#0022AA;
+    }
+}
+
+
+
+/*-----FORMULARIOS-----*/
+
+.body-register {
+  background-color: white;
+}
+
+form{
+    background-color: #ebebeb;
+    width: 90%;
+    padding: 10px 0;
+    margin: 20px auto;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+form a{
+    text-decoration: none;
+}
+
+form label {
+    display: flex;
+    flex-direction: column;
+}
+
+form label input {
+    padding: 10px;
+    margin: 10px auto;
+    width: 75%;
+    border-color: transparent;
+    border-radius: 7px;
+}
+.box-radio {
+    display: flex;
+    justify-content: space-evenly;
+}
+.radio {
+    display: inline;
+    width: auto;
+}
+
+.checkbox {
+    width: auto;
+}
+
+label.checkbox {
+    display: inline-block;
+}
+
+.box-checkbox {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    margin: auto;
+}
+
+.button-file {
+    width: 75%;
+    margin: 10px auto;
+}
+
+button, .enviar-login, .enviar-register{
+    display: block;
+    width: 75%;
+    margin: 5px auto;
+    padding: 9px;
+    border-radius: 5px;
+    background-color: #1259c3;
+    color: white;
+    transition: all 0.5s;
+    text-align: center;
+    border: none;
+    font-size: 13px;   
+}
+
+
+.enviar-login:hover, .enviar-register:hover, button:hover {
+    background-color: #0022AA;
+}
+
+form p{
+    width: 75%;
+    margin: 15px auto 0px auto;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+@media (min-width: 769px) {
+    form {
+        width: 70%;
+    }
+    
+    .box-button-login, .box-botones-register{
+        display: flex;
+        margin: auto;
+        width: 75%;
+        justify-content: end;
+    }
+
+    .enviar-register{
+        width: 200px;
+        margin-right: 10px;
+    }
+
+    .borrar {
+        width: 120px;
+    }
+
+    .enviar-login {
+        width: 150px;
+        margin: 0px;
+    }
+}
