@@ -62,21 +62,6 @@ header ul li a{
 .banner img {
     width: 100%;
 }
-/* 
-Amarillo: #EAC926;
-Azul: #03264C;
-Celeste: #1259c3;
-Gris oscuro: #666;
-Gris claro: #ebebeb;
-Verde: #39b54a; 
-
-Cuerpos de texto: 12px
-Titulares (Basado en tu última visita/Ofertas): 24px
-Precios: 18px
-Descuentos: 16px
-Descripciones: 16px
-
-*/
 
 /*----- MAIN -----*/
 
@@ -97,23 +82,6 @@ main {
 .productos article img {
     width: 100%
 }
-
-
-/* main section{
-    width: 90%;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-main section article{
-    margin: 10px;  
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-} */
 
 .box-descripcion {
     width: 100%;
@@ -153,6 +121,7 @@ main section article .box-descripcion i{
     font-size: 18px;
     margin: 0;
     width: 30%;
+    min-width: 77px; /*para que no se encimen los precios de 6 cifras*/
 }
 
 .descuentos {
@@ -198,11 +167,6 @@ footer i {
 }
 
 /*----- MEDIA -----*/
-
-@media (min-width:361px) {
-
-
-}
 
 @media (min-width:481px) {
     .box-descripcion,.imagen-articulo {
@@ -315,8 +279,6 @@ footer i {
         color:#0022AA;
     }
 }
-
-
 
 /*-----FORMULARIOS-----*/
 
